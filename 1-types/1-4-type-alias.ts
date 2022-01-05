@@ -27,4 +27,8 @@
   type User = "user";
   let myUser: User;
   myUser = "user";
+
+  type Boal = true;
+  const isDog: Boal = true;
+  // const isCat: Boal = false; // Type 'false' is not assignable to type 'true'.
 }

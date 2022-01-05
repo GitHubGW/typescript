@@ -16,7 +16,7 @@
     reason: string;
   };
 
-  function login(id: string, password: string): LoginState {
+  function login2(id: string, password: string): LoginState {
     if (id && password) {
       return { result: "success", body: "success" };
     }
@@ -25,7 +25,7 @@
   }
 
   // printLoginState(state: LoginState) -> success, fail
-  function printLoginState(state: LoginState): void {
+  function printLoginState2(state: LoginState): void {
     // state.result -> success or fail
     if (state.result === "success") {
       console.log(state.body);

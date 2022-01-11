@@ -50,8 +50,14 @@
   CoffeeMaker.makeMachine(25);
 
   /**
-   * getter는 읽기 전용: get fnName(){}
-   * setter는 쓰기 전용: set fnName(){}
+   * Class내부에서 private인 데이터들에 접근해서 정보를 가져오거나 수정하고 싶을 때는 getter 또는 setter함수를 이용할 수 있다.
+   * getter함수는 반드시 어떤 값을 리턴해야 하고, setter함수는 반드시 최소 1개 이상의 데이터를 파라미터로 받아야 한다.
+   * 주의할 점은 getter를 통해 값을 가져올 때는 user.age()가 아닌 프로퍼티처럼 user.age를 통해 값을 가져와야 한다.
+   * setter 또한 값을 수정할 때는 user.age(10)이 아닌 프로퍼티처럼 user.age=10을 통해 값을 수정해야한다.
+   *
+   * getter는 읽기 전용: get 함수명(){}
+   * setter는 쓰기 전용: set 함수명(){}
+   *
    */
   class User {
     private internalAge = 4;
